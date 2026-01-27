@@ -8,11 +8,11 @@ import {
   MapPin,
   Clock
 } from 'lucide-react';
-import Layout from '../components/Layout.tsx';
-import Section from '../components/Section.tsx';
-import Button from '../components/Button.tsx';
-import { IMAGES, SERVICES, COMPANY_INFO } from '../constants.ts';
-import ServiceCard from '../components/ServiceCard.tsx';
+import Layout from '../components/Layout';
+import Section from '../components/Section';
+import Button from '../components/Button';
+import { IMAGES, SERVICES, COMPANY_INFO } from '../constants';
+import ServiceCard from '../components/ServiceCard';
 
 const Home: React.FC = () => {
   const location = useLocation();

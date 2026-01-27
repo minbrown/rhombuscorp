@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
-import Layout from '../components/Layout.tsx';
-import Section from '../components/Section.tsx';
-import Button from '../components/Button.tsx';
-import { PRICING_TIERS, COMPANY_INFO } from '../constants.ts';
+import Layout from '../components/Layout';
+import Section from '../components/Section';
+import Button from '../components/Button';
+import { PRICING_TIERS, COMPANY_INFO } from '../constants';
 
 const Pricing: React.FC = () => {
   return (

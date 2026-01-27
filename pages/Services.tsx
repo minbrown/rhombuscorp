@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../components/Layout.tsx';
-import Section from '../components/Section.tsx';
-import ServiceCard from '../components/ServiceCard.tsx';
-import { SERVICES, COMPANY_INFO } from '../constants.ts';
-import Button from '../components/Button.tsx';
+import Layout from '../components/Layout';
+import Section from '../components/Section';
+import ServiceCard from '../components/ServiceCard';
+import { SERVICES, COMPANY_INFO } from '../constants';
+import Button from '../components/Button';
 
 const Services: React.FC = () => {
   return (

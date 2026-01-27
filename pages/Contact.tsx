@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../components/Layout.tsx';
-import Section from '../components/Section.tsx';
+import Layout from '../components/Layout';
+import Section from '../components/Section';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import { COMPANY_INFO } from '../constants.ts';
+import { COMPANY_INFO } from '../constants';
 
 const Contact: React.FC = () => {
   return (

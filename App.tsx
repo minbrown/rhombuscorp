@@ -1,13 +1,13 @@
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Home from './pages/Home.tsx';
-import About from './pages/About.tsx';
-import Services from './pages/Services.tsx';
-import Pricing from './pages/Pricing.tsx';
-import Results from './pages/Results.tsx';
-import Contact from './pages/Contact.tsx';
-import Privacy from './pages/Privacy.tsx';
-import TermsOfService from './pages/TermsOfService.tsx';
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Pricing from './pages/Pricing';
+import Results from './pages/Results';
+import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import TermsOfService from './pages/TermsOfService';
 
 const App: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/Layout.tsx';
-import Section from '../components/Section.tsx';
-import { COMPANY_INFO, IMAGES } from '../constants.ts';
+import Layout from '../components/Layout';
+import Section from '../components/Section';
+import { COMPANY_INFO, IMAGES } from '../constants';
 import { CheckCircle2 } from 'lucide-react';
 
 const About: React.FC = () => {

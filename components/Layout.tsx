@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
-import { COMPANY_INFO, IMAGES } from '../constants.ts';
-import Button from './Button.tsx';
+import { COMPANY_INFO, IMAGES } from '../constants';
+import Button from './Button';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isScrolled, setIsScrolled] = useState(false);

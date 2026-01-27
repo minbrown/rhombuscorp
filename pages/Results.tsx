@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../components/Layout.tsx';
-import Section from '../components/Section.tsx';
-import { TESTIMONIALS, COMPANY_INFO } from '../constants.ts';
+import Layout from '../components/Layout';
+import Section from '../components/Section';
+import { TESTIMONIALS, COMPANY_INFO } from '../constants';
 import { Star, Quote, TrendingUp, DollarSign, CalendarCheck } from 'lucide-react';
-import Button from '../components/Button.tsx';
+import Button from '../components/Button';
 
 const Results: React.FC = () => {
   return (
