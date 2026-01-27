@@ -103,7 +103,7 @@ const Home: React.FC = () => {
               transition={{ duration: 1.2, delay: 0.2 }}
               className="lg:col-span-5 relative mt-12 lg:mt-0 flex justify-center lg:block"
             >
-              <div className="relative max-w-[350px] sm:max-w-[450px] lg:max-w-none">
+              <div className="relative max-w-[350px] sm:max-w-[450px] lg:max-w-none scale-[0.85] transform-gpu origin-center lg:origin-right">
                 <motion.img 
                   src={IMAGES.robotGirl} 
                   alt="Rhombus AI Interface" 

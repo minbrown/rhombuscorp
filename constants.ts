@@ -16,7 +16,9 @@ export const COMPANY_INFO = {
   email: "minbrown301@gmail.com",
   address: "6478 Chariot St., Sandy Springs, GA 30328",
   ein: "83-1257112",
-  website: "https://rhombuscorp.com"
+  website: "https://rhombuscorp.com",
+  privacyUrl: "https://rhombus-corp.signalhouse.io/privacy-policy",
+  termsUrl: "https://rhombus-corp.signalhouse.io/terms-service"
 };
 
 export const SERVICES: Service[] = [
