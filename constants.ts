@@ -17,8 +17,8 @@ export const COMPANY_INFO = {
   address: "6478 Chariot St., Sandy Springs, GA 30328",
   ein: "83-1257112",
   website: "https://rhombuscorp.com",
-  privacyUrl: "https://rhombus-corp.signalhouse.io/privacy-policy",
-  termsUrl: "https://rhombus-corp.signalhouse.io/terms-service"
+  privacyUrl: "https://rhombus-corp.signalhouse.io/intake/LUPEHNZ/privacy-policy",
+  termsUrl: "https://rhombus-corp.signalhouse.io/intake/LUPEHNZ/terms-service"
 };
 
 export const SERVICES: Service[] = [
@@ -28,7 +28,7 @@ export const SERVICES: Service[] = [
     description: "Cutting-edge web design powered by AI to ensure maximum conversion and high-speed performance.",
     icon: Globe,
     benefits: ["Custom Visuals", "SEO Optimized", "Mobile First"],
-    value: "Increases user engagement by 40%."
+    value: "Increases user engagement by 40."
   },
   {
     id: 'consulting',
