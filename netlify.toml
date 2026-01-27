@@ -1,8 +1,7 @@
 [build]
-  publish = "."
+  command = "npm run build"
+  publish = "dist"
 
-# Netlify handles SPA routing by redirecting all unknown paths to index.html
-# This ensures that if a user refreshes on a subpage, the app still loads.
 [[redirects]]
   from = "/*"
   to = "/index.html"

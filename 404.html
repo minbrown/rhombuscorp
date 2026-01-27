@@ -13,11 +13,13 @@
 <body>
     <div style="text-align: center;">
         <div class="loader" style="margin: 0 auto 20px;"></div>
-        <p>Loading Rhombus Corp...</p>
+        <p style="letter-spacing: 1px; font-size: 14px; color: #8799c5;">Redirecting to Home...</p>
     </div>
     <script>
-        // Fallback for non-Vercel environments or unexpected 404s
-        window.location.href = "/";
+        // Use relative path for subfolder deployments (e.g. GitHub Pages)
+        var path = window.location.pathname;
+        // If we are in a subfolder, we need to stay in it
+        window.location.href = "./";
     </script>
 </body>
 </html>
