@@ -21,11 +21,13 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const scrollToSection = (id: string) => {
     setIsMobileMenuOpen(false);
     
+    // If we're not on the home page, go home with the hash
     if (location.pathname !== '/') {
       navigate(`/#${id}`);
       return;
     }
     
+    // If we are on the home page, scroll to the element
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -50,6 +52,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <div className="min-h-screen flex flex-col bg-brand-dark text-brand-light font-sans relative">
+      {/* Background Layer */}
       <div 
         className="fixed inset-0 z-0 pointer-events-none bg-cover bg-center"
         style={{ 
