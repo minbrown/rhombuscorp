@@ -7,6 +7,8 @@ import Button from '../components/Button';
 import { PRICING_TIERS, COMPANY_INFO } from '../constants';
 
 const Pricing: React.FC = () => {
+  const DEMO_URL = "https://links.echovoicelabs.com/widget/form/sy6v4Mrfbvd3mFamdZ15";
+
   return (
     <Layout>
       <Section className="pt-32 !bg-transparent relative z-10">
@@ -44,7 +46,7 @@ const Pricing: React.FC = () => {
                  </div>
                </div>
                
-               <Button to="/#contact" className="w-full md:w-auto px-12">Claim Founding Rate</Button>
+               <Button to={DEMO_URL} external className="w-full md:w-auto px-12">Claim Founding Rate</Button>
             </div>
           </div>
         </div>
@@ -93,7 +95,8 @@ const Pricing: React.FC = () => {
               </ul>
 
               <Button 
-                to="/#contact" 
+                to={DEMO_URL}
+                external
                 variant={tier.recommended ? 'primary' : 'outline'}
                 className="w-full"
               >

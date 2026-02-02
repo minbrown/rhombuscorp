@@ -10,6 +10,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const DEMO_URL = "https://links.echovoicelabs.com/widget/form/sy6v4Mrfbvd3mFamdZ15";
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -87,7 +89,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 </button>
               ))}
             </div>
-            <Button onClick={() => scrollToSection('contact')} variant="primary" className="py-2 px-4 text-[10px]">
+            <Button to={DEMO_URL} external variant="primary" className="py-2 px-4 text-[10px]">
               Request Demo
             </Button>
           </div>
@@ -111,7 +113,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 {item.label}
               </button>
             ))}
-            <Button onClick={() => scrollToSection('contact')} variant="primary" className="w-full">
+            <Button to={DEMO_URL} external variant="primary" className="w-full">
               Request Demo
             </Button>
           </div>

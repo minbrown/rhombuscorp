@@ -6,6 +6,8 @@ import { Star, Quote, TrendingUp, DollarSign, CalendarCheck } from 'lucide-react
 import Button from '../components/Button';
 
 const Results: React.FC = () => {
+  const DEMO_URL = "https://links.echovoicelabs.com/widget/form/sy6v4Mrfbvd3mFamdZ15";
+
   return (
     <Layout>
       <Section className="pt-32 !bg-transparent relative z-10">
@@ -85,7 +87,7 @@ const Results: React.FC = () => {
                <p className="text-lg text-brand-dark mb-4 font-bold">
                  <span className="text-brand-red">ROI: 2,575%</span> | <span className="text-blue-700">Payback Period: 1.1 Days</span>
                </p>
-               <Button to="/#contact" className="w-full md:w-auto">Book Your Free Demo</Button>
+               <Button to={DEMO_URL} external className="w-full md:w-auto">Book Your Free Demo</Button>
             </div>
         </div>
       </Section>

@@ -6,6 +6,8 @@ import { SERVICES, COMPANY_INFO } from '../constants';
 import Button from '../components/Button';
 
 const Services: React.FC = () => {
+  const DEMO_URL = "https://links.echovoicelabs.com/widget/form/sy6v4Mrfbvd3mFamdZ15";
+
   return (
     <Layout>
       <Section className="pt-32 pb-20 !bg-transparent relative z-10">
@@ -63,7 +65,7 @@ const Services: React.FC = () => {
                 ))}
               </div>
               <div className="mt-10">
-                <Button to="/#contact">Start Capturing Missed Calls Today</Button>
+                <Button to={DEMO_URL} external>Start Capturing Missed Calls Today</Button>
               </div>
             </div>
             <div className="relative h-full min-h-[400px] bg-brand-darker/50 border border-brand-slate rounded-2xl p-8 flex items-center justify-center">

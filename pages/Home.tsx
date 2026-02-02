@@ -18,6 +18,8 @@ const Home: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const DEMO_URL = "https://links.echovoicelabs.com/widget/form/sy6v4Mrfbvd3mFamdZ15";
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -66,7 +68,8 @@ const Home: React.FC = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Button 
-                  onClick={() => scrollToSection('contact')} 
+                  to={DEMO_URL}
+                  external
                   variant="primary" 
                   className="px-10 py-4 text-base shadow-2xl shadow-brand-orange/20"
                 >
