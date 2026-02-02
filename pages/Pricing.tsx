@@ -7,6 +7,8 @@ import Button from '../components/Button';
 import { PRICING_TIERS, COMPANY_INFO } from '../constants';
 
 const Pricing: React.FC = () => {
+  const DEMO_URL = "https://links.echovoicelabs.com/widget/form/6fKuqYYIZ89df07Xji58";
+
   return (
     <Layout>
       <Section className="pt-32 !bg-transparent relative z-10">
