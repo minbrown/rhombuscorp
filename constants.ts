@@ -17,8 +17,8 @@ export const COMPANY_INFO = {
   address: "6478 Chariot St., Sandy Springs, GA 30328",
   ein: "83-1257112",
   website: "https://rhombuscorp.com",
-  privacyUrl: "https://rhombus-corp.signalhouse.io/intake/LUPEHNZ/privacy-policy",
-  termsUrl: "https://rhombus-corp.signalhouse.io/intake/LUPEHNZ/terms-service"
+  privacyUrl: "/privacy-policy",
+  termsUrl: "/terms-of-service"
 };
 
 export const SERVICES: Service[] = [

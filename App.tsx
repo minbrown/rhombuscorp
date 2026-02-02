@@ -8,6 +8,8 @@ import Results from './pages/Results';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicyRedirect from './pages/PrivacyPolicy';
+import PrivacyNewRedirect from './pages/PrivacyNew';
 
 const App: React.FC = () => {
   return (
@@ -19,8 +21,16 @@ const App: React.FC = () => {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/results" element={<Results />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/terms" element={<TermsOfService />} />
+        {/* Main Legal Routes */}
+        <Route path="/privacy-policy" element={<Privacy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        
+        {/* Legacy Redirects */}
+        <Route path="/privacy" element={<Navigate to="/privacy-policy" replace />} />
+        <Route path="/terms" element={<Navigate to="/terms-of-service" replace />} />
+        <Route path="/privacy-policy-old" element={<PrivacyPolicyRedirect />} />
+        <Route path="/privacy-new" element={<PrivacyNewRedirect />} />
+        
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>

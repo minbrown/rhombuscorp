@@ -137,23 +137,19 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 Providing premier AI-powered design, consulting, and business automation solutions. Sandy Springs based, globally focused.
               </p>
               <div className="flex gap-4">
-                <a 
-                  href={COMPANY_INFO.privacyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link 
+                  to={COMPANY_INFO.privacyUrl}
                   className="text-xs text-brand-blue hover:text-brand-orange font-bold uppercase tracking-widest transition-colors"
                 >
                   Privacy Policy
-                </a>
+                </Link>
                 <div className="w-px h-3 bg-brand-slate"></div>
-                <a 
-                  href={COMPANY_INFO.termsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link 
+                  to={COMPANY_INFO.termsUrl}
                   className="text-xs text-brand-blue hover:text-brand-orange font-bold uppercase tracking-widest transition-colors"
                 >
                   Terms of Service
-                </a>
+                </Link>
               </div>
             </div>
 
