@@ -213,7 +213,9 @@ const Home: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold mb-1">Call Us</h4>
-                  <p className="text-brand-gray">{COMPANY_INFO.phone}</p>
+                  <a href={`tel:${COMPANY_INFO.phone}`} className="text-brand-gray hover:text-brand-orange transition-colors font-medium">
+                    {COMPANY_INFO.phone}
+                  </a>
                 </div>
               </div>
               
@@ -223,7 +225,9 @@ const Home: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold mb-1">Email Us</h4>
-                  <p className="text-brand-gray">{COMPANY_INFO.email}</p>
+                  <a href={`mailto:${COMPANY_INFO.email}`} className="text-brand-gray hover:text-brand-blue transition-colors font-medium">
+                    {COMPANY_INFO.email}
+                  </a>
                 </div>
               </div>
 

@@ -47,7 +47,7 @@ const Privacy: React.FC = () => {
                   <p className="text-sm text-brand-gray mb-2">You can opt out of SMS messages at any time by:</p>
                   <ul className="list-disc pl-5 text-sm text-brand-gray space-y-1">
                     <li>Replying STOP to any message</li>
-                    <li>Contacting us at <a href="mailto:minbrown301@gmail.com" className="text-brand-orange hover:underline">minbrown301@gmail.com</a> or <a href="tel:7708755882" className="text-brand-orange hover:underline">(770) 875-5882</a></li>
+                    <li>Contacting us at <a href={`mailto:${COMPANY_INFO.email}`} className="text-brand-orange hover:underline">{COMPANY_INFO.email}</a> or <a href={`tel:${COMPANY_INFO.phone}`} className="text-brand-orange hover:underline">{COMPANY_INFO.phone}</a></li>
                   </ul>
                 </div>
 
@@ -184,7 +184,7 @@ const Privacy: React.FC = () => {
                 <li className="bg-brand-charcoal/50 p-3 rounded border border-brand-slate">Withdraw consent for SMS messaging (reply STOP)</li>
                 <li className="bg-brand-charcoal/50 p-3 rounded border border-brand-slate">Object to processing of your data</li>
               </ul>
-              <p className="text-sm mb-10">To exercise these rights, contact us at <a href="mailto:minbrown301@gmail.com" className="text-brand-orange">{COMPANY_INFO.email}</a> or <a href="tel:7708755882" className="text-brand-orange">{COMPANY_INFO.phone}</a>.</p>
+              <p className="text-sm mb-10">To exercise these rights, contact us at <a href={`mailto:${COMPANY_INFO.email}`} className="text-brand-orange hover:underline">{COMPANY_INFO.email}</a> or <a href={`tel:${COMPANY_INFO.phone}`} className="text-brand-orange hover:underline">{COMPANY_INFO.phone}</a>.</p>
 
               <div className="border-2 border-brand-blue/30 p-8 rounded-2xl">
                 <h3 className="text-2xl font-black text-white mb-4">CALIFORNIA RESIDENTS (CCPA)</h3>
@@ -231,8 +231,8 @@ const Privacy: React.FC = () => {
                   <p className="text-sm text-brand-gray mb-4">Sandy Springs, GA 30328</p>
                 </div>
                 <div>
-                  <p className="text-sm text-brand-gray"><strong>Email:</strong> {COMPANY_INFO.email}</p>
-                  <p className="text-sm text-brand-gray"><strong>Phone:</strong> {COMPANY_INFO.phone}</p>
+                  <p className="text-sm text-brand-gray"><strong>Email:</strong> <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-brand-blue transition-colors">{COMPANY_INFO.email}</a></p>
+                  <p className="text-sm text-brand-gray"><strong>Phone:</strong> <a href={`tel:${COMPANY_INFO.phone}`} className="hover:text-brand-orange transition-colors">{COMPANY_INFO.phone}</a></p>
                   <p className="text-sm text-brand-gray"><strong>EIN:</strong> {COMPANY_INFO.ein}</p>
                 </div>
               </div>

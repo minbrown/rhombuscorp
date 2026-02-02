@@ -195,8 +195,8 @@ const TermsOfService: React.FC = () => {
                   <p className="text-sm text-brand-gray mb-4">Sandy Springs, GA 30328</p>
                 </div>
                 <div>
-                  <p className="text-sm text-brand-gray"><strong>Email:</strong> {COMPANY_INFO.email}</p>
-                  <p className="text-sm text-brand-gray"><strong>Phone:</strong> {COMPANY_INFO.phone}</p>
+                  <p className="text-sm text-brand-gray"><strong>Email:</strong> <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-brand-blue transition-colors">{COMPANY_INFO.email}</a></p>
+                  <p className="text-sm text-brand-gray"><strong>Phone:</strong> <a href={`tel:${COMPANY_INFO.phone}`} className="hover:text-brand-orange transition-colors">{COMPANY_INFO.phone}</a></p>
                   <p className="text-sm text-brand-gray"><strong>EIN:</strong> {COMPANY_INFO.ein}</p>
                 </div>
               </div>

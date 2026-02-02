@@ -75,8 +75,12 @@ const About: React.FC = () => {
                 <img src={IMAGES.logo} alt={COMPANY_INFO.name} className="h-10 w-auto mx-auto mb-8 object-contain" />
                 <p className="font-black text-brand-dark text-xl mb-2">{COMPANY_INFO.legalName}</p>
                 <p className="text-gray-600 font-medium mb-1">{COMPANY_INFO.address}</p>
-                <p className="text-gray-600 font-medium mb-1">{COMPANY_INFO.email}</p>
-                <p className="text-gray-600 font-medium">{COMPANY_INFO.phone}</p>
+                <p className="text-gray-600 font-medium mb-1">
+                  <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-brand-blue transition-colors">{COMPANY_INFO.email}</a>
+                </p>
+                <p className="text-gray-600 font-medium">
+                  <a href={`tel:${COMPANY_INFO.phone}`} className="hover:text-brand-orange transition-colors">{COMPANY_INFO.phone}</a>
+                </p>
                 <div className="mt-4 pt-4 border-t border-gray-200">
                     <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">EIN: {COMPANY_INFO.ein}</p>
                 </div>
