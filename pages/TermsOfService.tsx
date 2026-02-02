@@ -85,6 +85,21 @@ const TermsOfService: React.FC = () => {
                   </div>
                 </div>
 
+                <div>
+                  <h4 className="text-white font-bold mb-2">COSTS</h4>
+                  <p className="text-sm text-brand-gray leading-relaxed">Message and data rates may apply depending on your mobile carrier's plan. Rhombus Corp is not responsible for any charges from your carrier.</p>
+                </div>
+
+                <div>
+                  <h4 className="text-white font-bold mb-2">CARRIER DISCLAIMER</h4>
+                  <p className="text-sm text-brand-gray leading-relaxed">Rhombus Corp is not liable for delayed or undelivered messages. Message delivery is subject to your mobile carrier's terms and network availability. Carriers are not liable for delayed or undelivered messages.</p>
+                </div>
+
+                <div>
+                  <h4 className="text-white font-bold mb-2">AGE REQUIREMENT</h4>
+                  <p className="text-sm text-brand-gray leading-relaxed">You must be 18 years of age or older to consent to receive SMS messages from Rhombus Corp. By providing your phone number and consenting to SMS, you confirm that you are at least 18 years old.</p>
+                </div>
+
                 <div className="pt-6 border-t border-brand-slate/50">
                   <h4 className="text-brand-blue font-bold mb-2">NO THIRD-PARTY SHARING</h4>
                   <p className="text-sm font-bold bg-brand-blue/10 p-4 rounded border border-brand-blue/20">
