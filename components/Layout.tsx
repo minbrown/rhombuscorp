@@ -78,7 +78,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           </Link>
 
           <div className="hidden xl:flex items-center gap-6">
-            <div className="flex items-center gap-6 mr-4">
+            <div className="flex items-center gap-6">
               {navItems.map((item) => (
                 <button 
                   key={item.id}
@@ -89,9 +89,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 </button>
               ))}
             </div>
-            <Button to={DEMO_URL} external variant="primary" className="py-2 px-4 text-[10px]">
-              Request Demo
-            </Button>
           </div>
 
           <button 
@@ -113,9 +110,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 {item.label}
               </button>
             ))}
-            <Button to={DEMO_URL} external variant="primary" className="w-full">
-              Request Demo
-            </Button>
           </div>
         )}
       </nav>

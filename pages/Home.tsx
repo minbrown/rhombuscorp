@@ -68,17 +68,9 @@ const Home: React.FC = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Button 
-                  to={DEMO_URL}
-                  external
+                  onClick={() => scrollToSection('services')} 
                   variant="primary" 
                   className="px-10 py-4 text-base shadow-2xl shadow-brand-orange/20"
-                >
-                  Book A Free Demo
-                </Button>
-                <Button 
-                  onClick={() => scrollToSection('services')} 
-                  variant="outline" 
-                  className="px-10 py-4 text-base backdrop-blur-sm"
                 >
                   View Our Services
                 </Button>
